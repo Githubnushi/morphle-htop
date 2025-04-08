@@ -14,7 +14,7 @@ def htop():
     ist = datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S.%f')
 
     try:
-        top_output = subprocess.getoutput("top -b -n 1")  # Removed head -20 to show full output
+        top_output = subprocess.getoutput("top -b -n 1") 
     except Exception as e:
         top_output = f"Error getting top output: {str(e)}"
 
